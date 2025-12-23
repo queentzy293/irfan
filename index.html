@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Developer Muda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="shooting-stars"></div>
+    
+    <header>
+        <div class="logo">🚀 PORTFOLIO</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">My Work</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="profile-photo">
+                <img src="prof.jpeg" alt="Profile Photo" id="profileImage">
+                <div class="astronaut-helmet"></div>
+            </div>
+            <span class="hero-label">🌙 Selamat Datang di Space Saya</span>
+            <h1>Hi, Saya irfan <span class="highlight">Developer Junior</span></h1>
+            <p>Menjelajahi dunia digital dengan kreativitas dan inovasi. Menciptakan pengalaman digital yang luar biasa di Roblox Studio!</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">Lihat Karya Saya</a>
+                <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+            </div>
+        </div>
+        <div class="moon-float">
+            <div class="crescent-moon">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="moonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+                        </linearGradient>
+                        <filter id="glow">
+                            <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <circle cx="100" cy="100" r="80" fill="url(#moonGradient)" filter="url(#glow)"/>
+                    <circle cx="120" cy="100" r="70" fill="#0a0e27"/>
+                    <circle cx="85" cy="85" r="12" fill="#E8B923" opacity="0.3"/>
+                    <circle cx="95" cy="120" r="8" fill="#E8B923" opacity="0.3"/>
+                    <circle cx="70" cy="105" r="15" fill="#E8B923" opacity="0.3"/>
+                    <circle cx="80" cy="65" r="6" fill="#E8B923" opacity="0.3"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects fade-in" id="projects">
+        <div class="section-header">
+            <div class="section-label">🌟 Karya Saya</div>
+            <h2 class="section-title">My Work</h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <span class="project-emoji">🔐</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Admin Panel System</h3>
+                    <p class="project-desc">Sistem admin panel yang powerful dengan fitur moderasi, manajemen player, dan kontrol penuh terhadap game server.</p>
+                    <div class="project-tags">
+                        <span class="tag">Admin Commands</span>
+                        <span class="tag">User Management</span>
+                        <span class="tag">Moderation Tools</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                    <span class="project-emoji">💾</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Database Integration</h3>
+                    <p class="project-desc">Implementasi database yang efisien untuk menyimpan data player, inventory system, dan progress tracking dengan DataStore2.</p>
+                    <div class="project-tags">
+                        <span class="tag">DataStore</span>
+                        <span class="tag">Data Management</span>
+                        <span class="tag">Save System</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+                    <span class="project-emoji">🎨</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Custom GUI Design</h3>
+                    <p class="project-desc">Pembuatan user interface yang menarik dan interaktif dengan animasi smooth dan responsive design untuk semua device.</p>
+                    <div class="project-tags">
+                        <span class="tag">GUI Design</span>
+                        <span class="tag">UI Animation</span>
+                        <span class="tag">UX Design</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+                    <span class="project-emoji">⚙️</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Server Script System</h3>
+                    <p class="project-desc">Pengembangan server-side scripting yang robust untuk game mechanics, NPC behavior, dan multiplayer synchronization.</p>
+                    <div class="project-tags">
+                        <span class="tag">Server Scripts</span>
+                        <span class="tag">Game Logic</span>
+                        <span class="tag">RemoteEvents</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image" style="background: linear-gradient(135deg, #fa709a, #fee140);">
+                    <span class="project-emoji">🎮</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Game Mechanics</h3>
+                    <p class="project-desc">Sistem gameplay yang engaging dengan combat system, quest system, dan reward mechanisms yang addictive.</p>
+                    <div class="project-tags">
+                        <span class="tag">Combat System</span>
+                        <span class="tag">Quest System</span>
+                        <span class="tag">Rewards</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image" style="background: linear-gradient(135deg, #30cfd0, #330867);">
+                    <span class="project-emoji">💰</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Economy & Shop System</h3>
+                    <p class="project-desc">Sistem ekonomi in-game dengan shop system, currency management, dan transaction handling yang secure.</p>
+                    <div class="project-tags">
+                        <span class="tag">Shop System</span>
+                        <span class="tag">Economy</span>
+                        <span class="tag">Transactions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills fade-in" id="skills">
+        <div class="section-header">
+            <div class="section-label">💫 Keahlian Saya</div>
+            <h2 class="section-title">My Skills</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <span class="skill-icon">🎮</span>
+                <h3 class="skill-name">Roblox Studio Development</h3>
+                <p class="skill-desc">Expert dalam menciptakan game Roblox yang immersive. Mahir dalam Lua scripting, game mechanics, 3D modeling, UI/UX design untuk games, dan strategi monetisasi. Membangun sistem gameplay yang engaging dan lingkungan interaktif.</p>
+            </div>
+            <div class="skill-card">
+                <span class="skill-icon">🎨</span>
+                <h3 class="skill-name">Design System</h3>
+                <p class="skill-desc">Membuat design system yang comprehensive dengan komponen reusable, style guide, dan dokumentasi. Membangun visual language yang konsisten, design tokens, component library, dan arsitektur design yang scalable untuk produk dan brand.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact fade-in" id="contact">
+        <h2 class="section-title">Mari Bekerja Sama</h2>
+        <p>Punya project menarik? Mari kita ciptakan sesuatu yang luar biasa bersama!</p>
+        <div class="cta-buttons">
+            <a href="mailto:ipancoki55@gmail.com" class="btn btn-secondary" style="background: white; color: #00d9ff; border: none;">Kirim Email</a>
+        </div>
+        <div class="contact-info">
+            <a href="mailto:ipancoki55@gmail.com" class="contact-item contact-link">
+                <span>📧</span>
+                <span>ipancoki55@gmail.com</span>
+            </a>
+            <a href="https://t.me/Queen tz" target="_blank" class="contact-item contact-link">
+                <span>✈️</span>
+                <span>@Queen tz</span>
+            </a>
+            <div class="contact-item">
+                <span>📍</span>
+                <span>Jakarta, Indonesia</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/queentzy293" target="_blank" title="GitHub">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+            <a href="https://discord.com/users/irfanss76_88564" target="_blank" title="Discord">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
+                </svg>
+            </a>
+            <a href="https://www.roblox.com/users/irfanss76_88564/profile" target="_blank" title="Roblox">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.926 23.998L0 18.892 5.075.002 24 5.108zM15.348 10.09l-5.282-1.453-1.414 5.273 5.282 1.453z"/>
+                </svg>
+            </a>
+        </div>
+        <p>&copy; 2024 Portfolio. Made with 💙 in Space</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
